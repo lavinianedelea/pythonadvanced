@@ -30,10 +30,10 @@ class StockItem(object):
             return False
 
     def __ne__(self, other):
-        return (not self.__eq__(other))
+        return (not self.__eq__(other)) // not equal nu era nevoie neaparat dde asta
 
     def __hash__(self):
-        return hash(self.__repr__())
+        return hash(self.__repr__())  //conflicte de interes, intreaba !!
 
 class GetStockFinance(object):
 
